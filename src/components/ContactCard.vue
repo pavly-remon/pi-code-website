@@ -3,7 +3,7 @@
     <img
         class="rounded-full w-16 h-16 md:w-24 md:h-24 xl:w-40 xl:h-40
         animate-[wiggle_3s_ease-in-out_infinite] border-4 border-amber-100 mb-3"
-        :src="`../assets/${contactInfo.profilePic}`"
+        src="../assets/HW_img.jpg"
         alt="Profile Picture">
     <p class="name text-sm md:text-2xl xl:text-4xl font-bold mb-2 text-amber-100">{{ contactInfo.name }}</p>
     <p class="title text-sm md:text-2xl xl:text-4xl font-bold text-blue-300">{{ contactInfo.title }} | {{
@@ -21,7 +21,8 @@ export default {
   },
   methods: {
     getImageUrl(path) {
-      return new URL(path, import.meta.url).href
+      let url = new URL(path, import.meta.url)
+      return url.href
     }
   }
 }
