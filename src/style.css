@@ -24,3 +24,7 @@ body {
     justify-content: center;
     padding: 1rem;
 }
+
+#app {
+    width: 100%;
+}
