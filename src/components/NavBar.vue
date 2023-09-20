@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-10" style="width: 100%">
+  <div class="mt-5" style="width: 100%">
     <ul class="nav-bar">
       <li v-for="tab in tabs" :class="'nav-bar-tab text-center h-30 sm:h-20 md:text-sm sm:text-xs' + (tab === currTab ? ' active': '')"
            @click="changeTab(tab)">

@@ -9,6 +9,14 @@
     <p class="title text-sm md:text-2xl xl:text-4xl font-bold text-blue-300">{{ contactInfo.title }} | {{
         contactInfo.company
       }}</p>
+    <div class="social-sites">
+      <a href="https://github.com/pavly-remon/" target="_blank">
+        <img src="../assets/githubLogo.png" class="rounded-full w-6 h-6 md:w-8 md:h-8 xl:w-12 xl:h-12 my-5 mx-2" alt="Github Logo">
+      </a>
+      <a href="https://www.linkedin.com/in/pavly-remon/" target="_blank">
+        <img src="../assets/LinkedInLogo.png" class="rounded-full w-6 h-6 md:w-8 md:h-8 xl:w-12 xl:h-12 my-5 mx-2" alt="LinkedIn Logo">
+      </a>
+    </div>
   </div>
 </template>
 
@@ -37,4 +45,7 @@ export default {
   justify-content: center;
 }
 
+.social-sites {
+  display: flex;
+}
 </style>
