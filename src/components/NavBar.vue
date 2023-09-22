@@ -1,8 +1,9 @@
 <template>
-  <div class="mt-5" style="width: 100%">
+  <div style="width: 100%">
     <ul class="nav-bar">
-      <li v-for="tab in tabs" :class="'nav-bar-tab text-center h-30 sm:h-20 md:text-sm sm:text-xs' + (tab === currTab ? ' active': '')"
-           @click="changeTab(tab)">
+      <li v-for="tab in tabs"
+          :class="'nav-bar-tab text-center h-20 xl:h-30 text-xs md:text-base xl:text-lg' + (tab === currTab ? ' active': '')"
+          @click="onClick(tab)">
         {{ tab }}
       </li>
     </ul>
@@ -10,19 +11,15 @@
 </template>
 
 <script>
+import {list} from "postcss";
+
 export default {
   name: "NavBar",
+  props: ["tabs", "currTab", "onClick"],
   data() {
-    return {
-      currTab: "Work Experience",
-      tabs: ["Work Experience", "Projects", "Education & Courses"]
-    }
+    return {}
   },
-  methods: {
-    changeTab(tabName) {
-      this.currTab = tabName;
-    }
-  }
+  methods: {}
 }
 </script>
 
@@ -42,7 +39,7 @@ export default {
   justify-content: center;
 }
 
-.nav-bar-tab.active, .nav-bar-tab.active:hover{
+.nav-bar-tab.active, .nav-bar-tab.active:hover {
   --tw-text-opacity: 1;
   color: rgb(254 243 199 / var(--tw-text-opacity));
   border-bottom: 4px solid rgb(254 243 199 / var(--tw-text-opacity));

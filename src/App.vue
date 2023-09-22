@@ -1,15 +1,15 @@
 <template>
   <div>
-    <HomeView/>
+    <MainView/>
   </div>
 </template>
 
 <script>
-import HomeView from './views/HomeView.vue';
+import MainView from './MainView.vue';
 
 export default {
   components: {
-    HomeView,
+    MainView,
   },
 
 }
