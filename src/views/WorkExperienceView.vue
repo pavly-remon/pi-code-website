@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>
-import Timeline from "../components/Timeline.vue";
+import Timeline from "/src/components/Timeline.vue";
 
 export default {
   name: "WorkExperienceView",
