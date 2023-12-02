@@ -6,6 +6,9 @@ export default {
     ],
     theme: {
         extend: {
+            fontSize: {
+                'xxs': '8px'
+            },
             screens: {
                 'sm': '300px',
                 'md': '640px',
@@ -13,6 +16,7 @@ export default {
                 'xl': '1280px',
                 '2xl': '1536px',
             },
+
             keyframes: {
                 wiggle: {
                     '0%, 100%': {transform: 'rotate(-3deg)'},

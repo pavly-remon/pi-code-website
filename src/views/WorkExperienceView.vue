@@ -1,26 +1,30 @@
 <template>
   <div class="content animate-[fadeInFromTop_1s_ease-in_0s_1]">
-    <p class="text-lg md:text-2xl xl:text-3xl font-bold mb-2 text-amber-100 w-full">Work Experience</p>
-    <TimeLine :steps="data"/>
+    <p class="text-lg md:text-2xl xl:text-3xl font-bold mb-5 text-amber-100 w-full">Work Experience</p>
+    <Timeline :steps="data"/>
   </div>
 </template>
 <script>
-import TimeLine from "../components/TimeLine.vue";
+import Timeline from "../components/Timeline.vue";
 
 export default {
   name: "WorkExperienceView",
-  components: {TimeLine},
+  components: {Timeline},
   data() {
     return {
       data: [
         {
           stepDate: "Feb,2022 - Present",
-          stepTitle: "Huawei"
+          stepTitle: "Huawei",
+          description: [
+            "Worked On different projects that support Business needs and Operation Management using Vue.js, SQL, and Python to create web apps and dashboards",
+            "Create Object-Detection AI Model that detects EHS & QC Issues.",
+            "Create OCR AI Model that identify hand-written documents."]
         },
         {
           stepDate: "Jun,2021 - Feb,2022",
           stepTitle: "Freelancer"
-        },
+        }
       ]
     }
   }
@@ -32,8 +36,7 @@ export default {
 .content {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
 }
-
 </style>
