@@ -12,11 +12,11 @@
   </div>
 </template>
 <script>
-import ContactCard from "./components/ContactCard.vue";
-import NavBar from "./components/NavBar.vue";
-import WorkExperienceView from "./views/WorkExperienceView.vue";
-import ProjectsView from "./views/ProjectsView.vue";
-import EducationView from "./views/EducationView.vue";
+import ContactCard from "@/components/ContactCard.vue";
+import NavBar from "@/components/NavBar.vue";
+import WorkExperienceView from "@/views/WorkExperienceView.vue";
+import ProjectsView from "@/views/ProjectsView.vue";
+import EducationView from "@/views/EducationView.vue";
 
 export default {
   name: "MainView",
