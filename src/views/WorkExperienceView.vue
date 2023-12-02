@@ -24,7 +24,7 @@ export default {
         {
           stepDate: "Jun,2021 - Feb,2022",
           stepTitle: "Freelancer"
-        }
+        },
       ]
     }
   }
