@@ -1,8 +1,8 @@
 <template>
-  <div style="width: 100%">
+  <div class="mt-5" style="width: 100%; display: flex; justify-content: center">
     <ul class="nav-bar">
       <li v-for="tab in tabs"
-          :class="'nav-bar-tab text-center h-20 xl:h-30 text-xs md:text-base xl:text-lg' + (tab === currTab ? ' active': '')"
+          :class="'nav-bar-tab text-center h-16 xl:h-30 text-xs md:text-base xl:text-lg' + (tab === currTab ? ' active': '')"
           @click="onClick(tab)">
         {{ tab }}
       </li>
@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import {list} from "postcss";
 
 export default {
   name: "NavBar",
@@ -26,10 +25,13 @@ export default {
 
 <style scoped>
 .nav-bar {
+  width: 70%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  background-color: #242424;
+  border-radius: 30px;
 }
 
 .nav-bar-tab {
@@ -39,17 +41,30 @@ export default {
   justify-content: center;
 }
 
-.nav-bar-tab.active, .nav-bar-tab.active:hover {
+.nav-bar-tab.active:nth-child(1), .nav-bar-tab:hover:nth-child(1) {
   --tw-text-opacity: 1;
-  color: rgb(254 243 199 / var(--tw-text-opacity));
-  border-bottom: 4px solid rgb(254 243 199 / var(--tw-text-opacity));
+  color: #242424;
+  background-color: rgb(254 243 199 / var(--tw-text-opacity));
   font-weight: bold;
+  border-radius: 30px 0 0 30px;
   transition: ease 0.5s;
 }
 
-.nav-bar-tab:hover {
+.nav-bar-tab.active:nth-last-child(1), .nav-bar-tab:hover:nth-last-child(1) {
   --tw-text-opacity: 1;
-  color: rgb(147 197 253 / var(--tw-text-opacity));
+  color: #242424;
+  background-color: rgb(254 243 199 / var(--tw-text-opacity));
+  font-weight: bold;
+  border-radius: 0 30px 30px 0;
+  transition: ease 0.5s;
+}
+
+.nav-bar-tab.active:not(:nth-last-child(1)):not(:nth-child(1)), .nav-bar-tab:hover:not(:nth-last-child(1)):not(:nth-child(1)) {
+  --tw-text-opacity: 1;
+  color: #242424;
+  background-color: rgb(254 243 199 / var(--tw-text-opacity));
+  font-weight: bold;
+  transition: ease 0.5s;
 }
 
 </style>

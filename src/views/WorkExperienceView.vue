@@ -6,26 +6,14 @@
 </template>
 <script>
 import Timeline from "@/components/Timeline.vue";
+import WorkExperience from '@/assets/Work-Experience.json';
 
 export default {
   name: "WorkExperienceView",
   components: {Timeline},
   data() {
     return {
-      data: [
-        {
-          stepDate: "Feb,2022 - Present",
-          stepTitle: "Huawei",
-          description: [
-            "Worked On different projects that support Business needs and Operation Management using Vue.js, SQL, and Python to create web apps and dashboards",
-            "Create Object-Detection AI Model that detects EHS & QC Issues.",
-            "Create OCR AI Model that identify hand-written documents."]
-        },
-        {
-          stepDate: "Jun,2021 - Feb,2022",
-          stepTitle: "Freelancer"
-        },
-      ]
+      data: WorkExperience
     }
   }
 }

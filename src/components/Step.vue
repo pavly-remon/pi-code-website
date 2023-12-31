@@ -10,7 +10,7 @@
     </div>
     <p class="text-xs xl:text-base font-bold text-center">{{ stepTitle }}</p>
 
-    <ul v-if="stepDescription && stepDescription.length !== 0" class="description px-4 py-5 xl:px-10 h-[90%]">
+    <ul v-if="stepDescription && stepDescription.length !== 0" class="description px-4 pt-2 pb-5 xl:px-10 h-[95%]">
       <li class="text-xxs xl:text-sm pr-0 xl:pr-48 mb-2 list-disc" v-for="text in stepDescription">{{ text }}</li>
     </ul>
   </div>
