@@ -36,7 +36,6 @@ export default {
   display: grid;
   width: 100%;
   gap: 2%;
-  //grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
 }
 
 </style>
