@@ -3,7 +3,7 @@
     <div class="project-tile p-5">
       <div class="h-40 xl:h-40">
         <div v-show="!coverImage" class="img-container">{{ projectTitle }}</div>
-        <img class="cover-image" v-show="coverImage" :src="coverImage" :alt="projectTitle"/>
+        <img class="cover-image" v-show="coverImage" :src="getImageUrl(coverImage)" :alt="projectTitle"/>
 
       </div>
       <div class="text-xs xl:text-lg my-2">{{ projectTitle }}</div>
@@ -11,8 +11,14 @@
   </a>
 </template>
 <script>
+
 export default {
   name: "ProjectTile",
+  methods: {
+    getImageUrl(path) {
+      return new URL(path, import.meta.url).href
+    }
+  },
   props: {
     coverImage: {
       type: String,
@@ -27,6 +33,8 @@ export default {
       default: null
     }
   }
+  ,
+
 }
 </script>
 
