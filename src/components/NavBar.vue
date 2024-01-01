@@ -1,8 +1,8 @@
 <template>
   <div class="mt-5" style="width: 100%; display: flex; justify-content: center">
-    <ul class="nav-bar">
+    <ul class="nav-bar w-[100%] xl:w-[70%]">
       <li v-for="tab in tabs"
-          :class="'nav-bar-tab text-center h-16 xl:h-30 text-xs md:text-base xl:text-lg' + (tab === currTab ? ' active': '')"
+          :class="'nav-bar-tab text-center h-8 md:h-10 xl:h-12 text-xs md:text-base xl:text-lg' + (tab === currTab ? ' active': '')"
           @click="onClick(tab)">
         {{ tab }}
       </li>
@@ -25,7 +25,6 @@ export default {
 
 <style scoped>
 .nav-bar {
-  width: 70%;
   display: flex;
   flex-direction: row;
   align-items: center;

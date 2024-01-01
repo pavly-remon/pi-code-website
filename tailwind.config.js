@@ -7,7 +7,9 @@ export default {
     theme: {
         extend: {
             fontSize: {
-                'xxs': '8px'
+                'xxs': '8px',
+                'xs': '10px',
+                's': '12px',
             },
             screens: {
                 'sm': '300px',
