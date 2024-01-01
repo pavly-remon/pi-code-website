@@ -1,12 +1,12 @@
 <template>
   <a :href="projectUrl" target="_blank">
-    <div class="project-tile p-5">
+    <div class="project-tile p-2 xl:p-5">
       <div class="h-40 xl:h-40">
         <div v-show="!coverImage" class="img-container">{{ projectTitle }}</div>
         <img class="cover-image" v-show="coverImage" :src="getImageUrl(coverImage)" :alt="projectTitle"/>
 
       </div>
-      <div class="text-xs xl:text-lg my-2">{{ projectTitle }}</div>
+      <div class="text-xxs font-bold xl:text-lg my-2">{{ projectTitle }}</div>
     </div>
   </a>
 </template>
@@ -16,7 +16,7 @@ export default {
   name: "ProjectTile",
   methods: {
     getImageUrl(path) {
-      return new URL(path, import.meta.url).href
+      return new URL(path, import.meta.url).pathname
     }
   },
   props: {

@@ -3,7 +3,7 @@
     <img
         class="rounded-full w-20 h-20 md:w-24 md:h-24 xl:w-40 xl:h-40
         border-2 xl:border-4 border-amber-100 mb-3"
-        :src="getImageUrl(assets['ProfilePicture'])"
+        :src="assets.ProfilePicture"
         alt="Profile Picture">
     <p class="name text-base md:text-2xl xl:text-4xl font-bold mb-2 text-amber-100">{{ contactInfo.name }}</p>
     <p class="title text-base md:text-2xl xl:text-4xl font-bold text-blue-300">{{ contactInfo.title }} | {{
@@ -11,11 +11,11 @@
       }}</p>
     <div class="social-sites my-3">
       <a href="https://github.com/pavly-remon/" target="_blank">
-        <img :src="getImageUrl(assets['GithubLogo'])" class="rounded-full w-8 h-8 md:w-10 md:h-10 xl:w-12 xl:h-12  mx-2"
+        <img :src="assets.GithubLogo" class="rounded-full w-8 h-8 md:w-10 md:h-10 xl:w-12 xl:h-12  mx-2"
              alt="Github Logo">
       </a>
       <a href="https://www.linkedin.com/in/pavly-remon/" target="_blank">
-        <img :src="getImageUrl(assets['LinkedInLogo'])" class="rounded-full w-8 h-8 md:w-10 md:h-10 xl:w-12 xl:h-12 mx-2"
+        <img :src="assets.LinkedInLogo" class="rounded-full w-8 h-8 md:w-10 md:h-10 xl:w-12 xl:h-12 mx-2"
              alt="LinkedIn Logo">
       </a>
     </div>
@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import Assets from '@/assets/assets.json';
+import {Assets} from '@/assets/assets.js';
 
 export default {
   name: "ContactCard",
@@ -34,9 +34,6 @@ export default {
     };
   },
   methods: {
-    getImageUrl(path) {
-      return new URL(path, import.meta.url).href
-    }
   }
 }
 </script>

@@ -10,14 +10,14 @@
 </template>
 <script>
 import ProjectTile from "@/components/ProjectTile.vue";
-import Projects from "@/assets/projects.json";
+import {projectsList} from "@/assets/projects.js";
 
 export default {
   name: "ProjectsView",
   components: {ProjectTile},
   data() {
     return {
-      projects: Projects
+      projects: projectsList
     }
   }
 }
