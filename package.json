@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "material-icons": "^1.13.12",
     "@vercel/analytics": "^1.0.2",
+    "jquery": "^3.5.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {
