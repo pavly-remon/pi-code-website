@@ -5,15 +5,22 @@
     text-align: center;
 }
 
-.section {
+.section, .contact-section {
     width: 100%;
     background-color: rgba(128, 128, 128, 0.1);
     border-radius: 10px;
-    padding: 1.25rem;
+    padding: 1.25em;
     margin-bottom: 1rem;
 }
 
-.section:nth-child(1) {
+.contact-section {
     background-image: url("./assets/images/background.jpg");
+    background-position: 50% 0;
     background-size: cover;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
