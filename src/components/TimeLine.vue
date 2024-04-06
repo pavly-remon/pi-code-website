@@ -19,7 +19,7 @@ import WorkExperience from '@/assets/Work-Experience.json';
 import WorkDetails from "@/components/WorkDetails.vue";
 
 export default {
-  name: "TimeLine",
+  name: "Timeline",
   components: {WorkDetails, StepNew},
   data() {
     return {

@@ -9,9 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "material-icons": "^1.13.12",
     "@vercel/analytics": "^1.0.2",
+    "@vercel/speed-insights": "^1.0.10",
     "jquery": "^3.5.0",
+    "material-icons": "^1.13.12",
     "vue": "^3.3.4"
   },
   "devDependencies": {
@@ -19,6 +20,6 @@
     "autoprefixer": "^10.4.15",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
-    "vite": "5.0.5"
+    "vite": "^5.2.8"
   }
 }
