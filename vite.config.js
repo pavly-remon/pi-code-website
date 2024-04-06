@@ -9,8 +9,9 @@ export default defineConfig({
   plugins: [million.vite({ auto: true }), react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
-      "@tests": path.resolve(__dirname, "./tests"),
+      "@": path.resolve(__dirname, "src"),
+      "@assets": path.resolve(__dirname, "assets"),
+      "@tests": path.resolve(__dirname, "tests"),
     },
   },
 });
