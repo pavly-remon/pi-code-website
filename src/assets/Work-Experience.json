@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "stepDate": "Feb,2022 - Present",
     "stepTitle": "Huawei",
     "stepPosition": "Software Engineer",
@@ -24,6 +25,7 @@
     ]
   },
   {
+    "id": "2",
     "stepDate": "Jun,2021 - Feb,2022",
     "stepTitle": "Freelancer",
     "stepPosition": "Software Engineer",
